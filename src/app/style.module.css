@@ -1,0 +1,6 @@
+/* app shell — canvas fills viewport */
+.app {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+}

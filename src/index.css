@@ -1,0 +1,67 @@
+/*
+  FONT SWAP INSTRUCTIONS
+  ─────────────────────
+  1. Put your woff2 files in /public/fonts/
+  2. Add @font-face blocks here (before :root)
+  3. Update --font-serif and --font-sans below
+
+  @font-face {
+    font-family: 'PP Eiko';
+    src: url('/fonts/PPEiko-RegularItalic.woff2') format('woff2');
+    font-weight: 400; font-style: italic; font-display: swap;
+  }
+  @font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('/fonts/PPNeueMontreal-Regular.woff2') format('woff2');
+    font-weight: 400; font-display: swap;
+  }
+  @font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2');
+    font-weight: 500; font-display: swap;
+  }
+*/
+
+:root {
+  /* ── swap these two lines once fonts are loaded ── */
+  --font-serif:  'Playfair Display', Georgia, serif;   /* → 'PP Eiko' */
+  --font-sans:   'DM Sans', system-ui, sans-serif;     /* → 'PP Neue Montreal' */
+
+  --bg:          #f7f6f3;
+  --fg:          #1a1916;
+  --fg-2:        #69685f;
+  --fg-3:        #b2b1aa;
+  --border:      rgba(26,25,22,0.10);
+  --border-s:    rgba(26,25,22,0.18);
+  --bw:          0.75px;
+
+  --ease:        cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-s:      cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; }
+button { font: inherit; cursor: pointer; border: none; background: none; }
+::selection { background: rgba(26,25,22,0.08); }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* ── loader theme override (matches light bg) ── */
+:root {
+  --color-loader-bg:       var(--bg);
+  --color-loader-bar-bg:   rgba(26,25,22,0.08);
+  --color-loader-bar-fill: rgba(26,25,22,0.35);
+}

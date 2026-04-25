@@ -1,0 +1,60 @@
+.nav {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px 22px;
+  pointer-events: none;
+}
+
+.nav > * { pointer-events: auto; }
+
+/* ── name ── */
+.name {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--fg);
+  letter-spacing: -0.01em;
+  cursor: default;
+  transition: opacity 0.15s;
+}
+
+/* ── view toggle ── */
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.viewBtn {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  color: var(--fg-3);
+  transition: color 0.15s var(--ease-s);
+  padding: 2px 0;
+  cursor: pointer;
+}
+.viewBtn:hover:not(.active) { color: var(--fg-2); }
+.active { color: var(--fg); }
+
+.dot {
+  font-size: 10px;
+  color: var(--fg-3);
+  line-height: 1;
+}
+
+/* ── info ── */
+.info {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--fg-2);
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: color 0.15s var(--ease-s);
+}
+.info:hover, .infoActive { color: var(--fg); }
