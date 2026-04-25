@@ -1,4 +1,3 @@
-import * as React from "react";
 import type { MediaItem } from "~/src/infinite-canvas/types";
 import styles from "./style.module.css";
 
