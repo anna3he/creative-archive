@@ -40,7 +40,7 @@ export function InfoOverlay({ open, onClose }: InfoOverlayProps) {
         <p className={styles.name}>Anna He</p>
 
         <p className={styles.tagline}>
-          Archive of designs and interfaces.<br />
+          Collection of designs and interfaces across experiments & select work.<br />
           Exploring new things, old ideas and the in-between.
         </p>
 
