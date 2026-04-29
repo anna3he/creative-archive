@@ -44,7 +44,7 @@ export function InfoOverlay({ open, onClose }: InfoOverlayProps) {
           Exploring new things, old ideas and the in-between.
         </p>
         <p className={styles.tagline}>
-          Client work in product, web & branding at{" "}
+          Select projects in product, web & branding at{" "}
           <a href="https://unphased.studio" target="_blank" rel="noreferrer">
             unphased.studio
           </a>
