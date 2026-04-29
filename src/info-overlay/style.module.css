@@ -9,7 +9,6 @@
   pointer-events: none;
 }
 .overlay.open { pointer-events: auto; }
-
 /* ── scrim ── */
 .scrim {
   position: absolute;
@@ -26,13 +25,12 @@
   backdrop-filter: blur(22px) brightness(0.70);
   -webkit-backdrop-filter: blur(22px) brightness(0.70);
 }
-
 /* ── card ── */
 .card {
   position: relative;
   z-index: 1;
   text-align: center;
-  max-width: 340px;
+  max-width: 520px;
   width: 100%;
   padding: 0 24px;
   opacity: 0;
@@ -46,7 +44,6 @@
   opacity: 1;
   transform: translateY(0);
 }
-
 /* ── name ── */
 .name {
   font-family: var(--font-serif);
@@ -58,16 +55,14 @@
   color: rgba(247,246,243,0.95);
   margin-bottom: 18px;
 }
-
 /* ── tagline ── */
 .tagline {
   font-size: 14px;
   font-weight: 300;
   color: rgba(247,246,243,0.65);
   line-height: 1.65;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
-
 /* ── divider ── */
 .rule {
   display: flex;
@@ -85,7 +80,6 @@
   border-radius: 50%;
   background: rgba(247,246,243,0.25);
 }
-
 /* ── studio ── */
 .studio {
   font-size: 13px;
@@ -94,7 +88,6 @@
   line-height: 1.65;
   margin-bottom: 22px;
 }
-
 /* ── clock ── */
 .clock {
   font-size: 11px;
@@ -103,7 +96,6 @@
   margin-bottom: 20px;
   font-variant-numeric: tabular-nums;
 }
-
 /* ── links ── */
 .links {
   display: flex;
@@ -119,7 +111,6 @@
   transition: color 0.15s;
 }
 .link:hover { color: rgba(247,246,243,0.85); }
-
 /* ── close ── */
 .close {
   font-family: var(--font-sans);
@@ -130,7 +121,6 @@
   transition: color 0.15s;
 }
 .close:hover { color: rgba(247,246,243,0.6); }
-
 .credit {
   font-size: 11px;
   font-weight: 300;
