@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import manifest from "~/src/artworks/manifest.json";
 import { GridView } from "~/src/grid-view";
 import { InfoOverlay } from "~/src/info-overlay";
@@ -45,6 +46,9 @@ export function App() {
         onInfoOpen={() => setInfoOpen(true)}
         infoOpen={infoOpen}
       />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </>
   );
 }
